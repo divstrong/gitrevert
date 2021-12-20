@@ -57,3 +57,20 @@ $(function () {
     source: skillNames,
   });
 });
+
+
+// Datepicker widget
+$(function () {
+  $('#datepicker').datepicker({
+    changeMonth: true,
+    changeYear: true,
+  });
+});
+
+// Sortable interaction
+$(function () {
+  $('#skills-list').sortable({
+    placeholder: 'ui-state-highlight',
+  });
+  $('#skills-list').disableSelection();
+});
